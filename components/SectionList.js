@@ -78,7 +78,7 @@ export default class SectionList extends Component {
         this.measure = {
           y: pageY,
           width,
-          height
+          height: this.props.style.height / 27 ,
         };
       })
     }, 0);
@@ -194,7 +194,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     backgroundColor: 'transparent',
     alignItems:'flex-end',
-    justifyContent:'flex-start',
+    justifyContent: 'space-between',
     right: 5,
     top: 0,
     bottom: 0
